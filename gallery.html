@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Photo gallery of Champion — portraits, leadership, networking, events and marketing.">
+
+  <meta name="theme-color" content="#0b0b0a">
+
+  <title>Gallery — Champion</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dark-site gallery-page">
+
+<header class="site-header">
+
+  <a class="brand" href="index.html">
+
+    CHAMPION<span>.</span>
+
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+
+    <span></span><span></span>
+
+  </button>
+
+  <nav class="nav" id="nav">
+
+    <a href="index.html#about">About</a>
+
+    <a href="index.html#work">Expertise</a>
+
+    <a href="index.html#leadership">Leadership</a>
+
+    <a href="index.html#projects">Projects</a>
+
+    <a class="nav-contact" href="index.html#contact">
+
+      Let's connect <span>↗</span>
+
+    </a>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <section class="gallery-hero section-shell">
+
+    <p class="eyebrow">
+
+      <span class="eyebrow-line"></span>
+
+      CHAMPION / PHOTO ARCHIVE
+
+    </p>
+
+    <h1>
+
+      Life in<br>
+
+      <span>frames.</span>
+
+    </h1>
+
+    <p>
+
+      A collection of portraits, leadership moments,
+
+      brand campaigns, events and people met along the way.
+
+    </p>
+
+    <div class="gallery-filters" role="group" aria-label="Filter gallery">
+
+      <button class="filter-btn active" data-filter="all">
+
+        All moments
+
+      </button>
+
+      <button class="filter-btn" data-filter="portrait">
+
+        Portraits
+
+      </button>
+
+      <button class="filter-btn" data-filter="leadership">
+
+        Leadership
+
+      </button>
+
+      <button class="filter-btn" data-filter="events">
+
+        Events
+
+      </button>
+
+      <button class="filter-btn" data-filter="marketing">
+
+        Marketing
+
+      </button>
+
+      <button class="filter-btn" data-filter="networking">
+
+        Networking
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <section class="section-shell gallery-main">
+
+    <div class="gallery-grid gallery-page-grid"
+
+         id="galleryGrid"
+
+         aria-live="polite">
+
+    </div>
+
+    <p class="gallery-help">
+
+      Add your remaining photos to the <code>images</code> folder
+
+      using the filenames in the guide. The gallery will show
+
+      each photo after you refresh the page.
+
+    </p>
+
+    <a href="index.html" class="back-home">
+
+      ← Back to homepage
+
+    </a>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+
+  <a class="brand" href="index.html">
+
+    CHAMPION<span>.</span>
+
+  </a>
+
+  <p>Marketing · Media · Leadership</p>
+
+  <a href="#" class="back-top">
+
+    BACK TO TOP ↑
+
+  </a>
+
+  <small>
+
+    © <span id="year"></span> Ayanbiyi Isreal Pamilerin. All rights reserved.
+
+  </small>
+
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+
+    ×
+
+  </button>
+
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+
+    ←
+
+  </button>
+
+  <img id="lightboxImage" src="" alt="">
+
+  <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+
+    →
+
+  </button>
+
+  <p id="lightboxCaption"></p>
+
+</div>
+
+<script src="gallery.js"></script>
+
+</body>
+
+</html>
