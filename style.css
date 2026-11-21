@@ -2429,3 +2429,392 @@ h1 {
   }
 
 }
+
+
+/* ==========================================
+
+   CHAMPION PORTFOLIO — DESIGN ENHANCEMENTS
+
+========================================== */
+
+/* BETTER BUTTON INTERACTIONS */
+
+.button,
+
+.nav-contact,
+
+.text-link,
+
+.filter-btn,
+
+.back-home {
+
+  transition:
+
+    background .3s ease,
+
+    color .3s ease,
+
+    border-color .3s ease,
+
+    transform .3s ease;
+
+}
+
+.button:hover {
+
+  transform: translateY(-3px);
+
+}
+
+.filter-btn:hover {
+
+  transform: translateY(-2px);
+
+}
+
+/* PROJECT ROW INTERACTIONS */
+
+.project-row {
+
+  transition:
+
+    padding-left .35s ease,
+
+    background .35s ease;
+
+}
+
+.project-row:hover {
+
+  padding-left: 12px;
+
+}
+
+.project-row h3 {
+
+  transition: color .3s ease;
+
+}
+
+.project-row:hover h3 {
+
+  color: var(--gold2);
+
+}
+
+/* SERVICE CARD INTERACTIONS */
+
+.service-card {
+
+  transition: background .3s ease;
+
+}
+
+.service-card:hover {
+
+  background: rgba(198,163,107,.045);
+
+}
+
+.service-card h3 {
+
+  transition: color .3s ease;
+
+}
+
+.service-card:hover h3 {
+
+  color: var(--gold2);
+
+}
+
+/* SKILL TAG INTERACTIONS */
+
+.skill-cloud span {
+
+  transition:
+
+    background .3s ease,
+
+    border-color .3s ease,
+
+    color .3s ease,
+
+    transform .3s ease;
+
+}
+
+.skill-cloud span:hover {
+
+  background: var(--gold);
+
+  border-color: var(--gold);
+
+  color: #15130f;
+
+  transform: translateY(-3px);
+
+}
+
+/* GALLERY CARD IMPROVEMENTS */
+
+.gallery-card {
+
+  isolation: isolate;
+
+  transition:
+
+    transform .35s ease,
+
+    opacity .35s ease;
+
+}
+
+.gallery-card:hover {
+
+  transform: translateY(-3px);
+
+}
+
+.gallery-card:focus-visible {
+
+  outline: 2px solid var(--gold);
+
+  outline-offset: 4px;
+
+}
+
+.gallery-card[hidden] {
+
+  display: none !important;
+
+}
+
+/* GALLERY IMAGE */
+
+.gallery-card img {
+
+  transition:
+
+    transform .7s cubic-bezier(.2,.7,.2,1),
+
+    opacity .4s ease;
+
+}
+
+/* LIGHTBOX IMPROVEMENTS */
+
+.lightbox {
+
+  backdrop-filter: blur(12px);
+
+  opacity: 0;
+
+  transition: opacity .3s ease;
+
+}
+
+.lightbox.open {
+
+  opacity: 1;
+
+}
+
+.lightbox img {
+
+  border-radius: 3px;
+
+  animation: lightboxEnter .35s ease;
+
+}
+
+@keyframes lightboxEnter {
+
+  from {
+
+    opacity: 0;
+
+    transform: scale(.96);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: scale(1);
+
+  }
+
+}
+
+.lightbox button {
+
+  width: 48px;
+
+  height: 48px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  transition:
+
+    background .3s ease,
+
+    color .3s ease;
+
+}
+
+.lightbox button:hover {
+
+  background: rgba(198,163,107,.2);
+
+  color: var(--gold2);
+
+}
+
+.lightbox button:focus-visible {
+
+  outline: 2px solid var(--gold);
+
+  outline-offset: 4px;
+
+}
+
+/* IMAGE HOVER EFFECTS */
+
+.teaser-images a {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+.teaser-images img {
+
+  transition:
+
+    transform .7s ease,
+
+    filter .5s ease;
+
+}
+
+.teaser-images a:hover img {
+
+  transform: scale(1.07);
+
+  filter: saturate(1.1);
+
+}
+
+/* CONTACT INTERACTIONS */
+
+.contact-links>a {
+
+  transition:
+
+    color .3s ease,
+
+    padding-left .3s ease;
+
+}
+
+.contact-links>a:hover {
+
+  color: var(--gold2);
+
+  padding-left: 6px;
+
+}
+
+/* NAVIGATION ACTIVE STATES */
+
+.nav a:focus-visible,
+
+.brand:focus-visible,
+
+.back-top:focus-visible {
+
+  outline: 2px solid var(--gold);
+
+  outline-offset: 5px;
+
+}
+
+/* BETTER MOBILE LIGHTBOX */
+
+@media(max-width:600px) {
+
+  .lightbox {
+
+    padding: 65px 12px;
+
+  }
+
+  .lightbox img {
+
+    max-width: 94vw;
+
+    max-height: 72vh;
+
+  }
+
+  .lightbox button {
+
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 1.6rem;
+
+  }
+
+  .lightbox-close {
+
+    top: 12px;
+
+    right: 12px;
+
+  }
+
+  .lightbox-prev {
+
+    left: 5px;
+
+  }
+
+  .lightbox-next {
+
+    right: 5px;
+
+  }
+
+}
+
+/* ACCESSIBILITY */
+
+@media(prefers-reduced-motion: reduce) {
+
+  *,
+
+  *::before,
+
+  *::after {
+
+    scroll-behavior: auto !important;
+
+    animation-duration: .01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: .01ms !important;
+
+  }
+
+}

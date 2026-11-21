@@ -8,17 +8,53 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Photo gallery of Champion — portraits, leadership, networking, events and marketing.">
+  <meta name="description" content="Explore Champion's photo gallery featuring portraits, leadership moments, networking, events and marketing projects.">
+
+  <meta name="author" content="Ayanbiyi Isreal Pamilerin">
+
+  <meta name="robots" content="index, follow">
 
   <meta name="theme-color" content="#0b0b0a">
 
-  <title>Gallery — Champion</title>
+  <link rel="canonical" href="https://championentprofile.vercel.app/gallery.html">
+
+  <!-- Open Graph SEO -->
+
+  <meta property="og:title" content="Gallery — Champion">
+
+  <meta property="og:description" content="A collection of Champion's portraits, leadership moments, brand campaigns, events and experiences.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://championentprofile.vercel.app/gallery.html">
+
+  <meta property="og:image" content="https://championentprofile.vercel.app/images/Champion-Hero.jpg">
+
+  <!-- Twitter SEO -->
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="Gallery — Champion">
+
+  <meta name="twitter:description" content="Explore Champion's photo archive.">
+
+  <meta name="twitter:image" content="https://championentprofile.vercel.app/images/Champion-Hero.jpg">
+
+  <title>Gallery — Champion | Photo Archive</title>
+
+  <!-- Fonts -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+
+    rel="stylesheet">
+
+  <!-- Main stylesheet -->
 
   <link rel="stylesheet" href="style.css">
 
@@ -26,186 +62,339 @@
 
 <body class="dark-site gallery-page">
 
-<header class="site-header">
+  <!-- Skip navigation -->
 
-  <a class="brand" href="index.html">
+  <a href="#main-content" class="skip-link">
 
-    CHAMPION<span>.</span>
+    Skip to content
 
   </a>
 
-  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+  <!-- Header -->
 
-    <span></span><span></span>
+  <header class="site-header">
 
-  </button>
+    <a class="brand" href="index.html" aria-label="Champion homepage">
 
-  <nav class="nav" id="nav">
-
-    <a href="index.html#about">About</a>
-
-    <a href="index.html#work">Expertise</a>
-
-    <a href="index.html#leadership">Leadership</a>
-
-    <a href="index.html#projects">Projects</a>
-
-    <a class="nav-contact" href="index.html#contact">
-
-      Let's connect <span>↗</span>
+      CHAMPION<span>.</span>
 
     </a>
 
-  </nav>
+    <button
 
-</header>
+      class="menu-toggle"
 
-<main>
+      id="menuToggle"
 
-  <section class="gallery-hero section-shell">
+      type="button"
 
-    <p class="eyebrow">
+      aria-label="Open navigation"
 
-      <span class="eyebrow-line"></span>
+      aria-expanded="false"
 
-      CHAMPION / PHOTO ARCHIVE
+      aria-controls="nav">
 
-    </p>
+      <span></span>
 
-    <h1>
+      <span></span>
 
-      Life in<br>
+    </button>
 
-      <span>frames.</span>
+    <nav class="nav" id="nav" aria-label="Main navigation">
 
-    </h1>
+      <a href="index.html#about">About</a>
 
-    <p>
+      <a href="index.html#work">Expertise</a>
 
-      A collection of portraits, leadership moments,
+      <a href="index.html#leadership">Leadership</a>
 
-      brand campaigns, events and people met along the way.
+      <a href="index.html#projects">Projects</a>
 
-    </p>
+      <a class="nav-contact" href="index.html#contact">
 
-    <div class="gallery-filters" role="group" aria-label="Filter gallery">
+        Let's connect <span aria-hidden="true">↗</span>
 
-      <button class="filter-btn active" data-filter="all">
+      </a>
 
-        All moments
+    </nav>
 
-      </button>
+  </header>
 
-      <button class="filter-btn" data-filter="portrait">
+  <!-- Main content -->
 
-        Portraits
+  <main id="main-content">
 
-      </button>
+    <!-- Gallery introduction -->
 
-      <button class="filter-btn" data-filter="leadership">
+    <section class="gallery-hero section-shell">
 
-        Leadership
+      <p class="eyebrow">
 
-      </button>
+        <span class="eyebrow-line"></span>
 
-      <button class="filter-btn" data-filter="events">
+        CHAMPION / PHOTO ARCHIVE
 
-        Events
+      </p>
 
-      </button>
+      <h1>
 
-      <button class="filter-btn" data-filter="marketing">
+        Life in<br>
 
-        Marketing
+        <span>frames.</span>
 
-      </button>
+      </h1>
 
-      <button class="filter-btn" data-filter="networking">
+      <p>
 
-        Networking
+        A collection of portraits, leadership moments,
 
-      </button>
+        brand campaigns, events and people met along the way.
 
-    </div>
+      </p>
 
-  </section>
+      <!-- Gallery filters -->
 
-  <section class="section-shell gallery-main">
+      <div
 
-    <div class="gallery-grid gallery-page-grid"
+        class="gallery-filters"
 
-         id="galleryGrid"
+        role="group"
 
-         aria-live="polite">
+        aria-label="Filter gallery images">
 
-    </div>
+        <button
 
-    <p class="gallery-help">
+          class="filter-btn active"
 
-      
-    </p>
+          type="button"
 
-    <a href="index.html" class="back-home">
+          data-filter="all"
 
-      ← Back to homepage
+          aria-pressed="true">
+
+          All moments
+
+        </button>
+
+        <button
+
+          class="filter-btn"
+
+          type="button"
+
+          data-filter="portrait"
+
+          aria-pressed="false">
+
+          Portraits
+
+        </button>
+
+        <button
+
+          class="filter-btn"
+
+          type="button"
+
+          data-filter="leadership"
+
+          aria-pressed="false">
+
+          Leadership
+
+        </button>
+
+        <button
+
+          class="filter-btn"
+
+          type="button"
+
+          data-filter="events"
+
+          aria-pressed="false">
+
+          Events
+
+        </button>
+
+        <button
+
+          class="filter-btn"
+
+          type="button"
+
+          data-filter="marketing"
+
+          aria-pressed="false">
+
+          Marketing
+
+        </button>
+
+        <button
+
+          class="filter-btn"
+
+          type="button"
+
+          data-filter="networking"
+
+          aria-pressed="false">
+
+          Networking
+
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- Gallery images -->
+
+    <section
+
+      class="section-shell gallery-main"
+
+      aria-label="Photo collection">
+
+      <div
+
+        class="gallery-grid gallery-page-grid"
+
+        id="galleryGrid"
+
+        aria-live="polite"
+
+        aria-atomic="false">
+
+      </div>
+
+      <p class="gallery-help" id="galleryHelp">
+
+        Select any image to view it in full size.
+
+      </p>
+
+      <a href="index.html" class="back-home">
+
+        ← Back to homepage
+
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <a class="brand" href="index.html">
+
+      CHAMPION<span>.</span>
 
     </a>
 
-  </section>
+    <p>Marketing · Media · Leadership</p>
 
-</main>
+    <a href="#" class="back-top">
 
-<footer class="footer">
+      BACK TO TOP ↑
 
-  <a class="brand" href="index.html">
+    </a>
 
-    CHAMPION<span>.</span>
+    <small>
 
-  </a>
+      © <span id="year"></span>
 
-  <p>Marketing · Media · Leadership</p>
+      Ayanbiyi Isreal Pamilerin. All rights reserved.
 
-  <a href="#" class="back-top">
+    </small>
 
-    BACK TO TOP ↑
+  </footer>
 
-  </a>
+  <!-- Image lightbox -->
 
-  <small>
+  <div
 
-    © <span id="year"></span> Ayanbiyi Isreal Pamilerin. All rights reserved.
+    class="lightbox"
 
-  </small>
+    id="lightbox"
 
-</footer>
+    role="dialog"
 
-<div class="lightbox" id="lightbox" aria-hidden="true">
+    aria-modal="true"
 
-  <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
+    aria-label="Image viewer"
 
-    ×
+    aria-hidden="true"
 
-  </button>
+    tabindex="-1">
 
-  <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+    <button
 
-    ←
+      class="lightbox-close"
 
-  </button>
+      id="lightboxClose"
 
-  <img id="lightboxImage" src="" alt="">
+      type="button"
 
-  <button class="lightbox-next" id="lightboxNext" aria-label="Next image">
+      aria-label="Close image viewer">
 
-    →
+      ×
 
-  </button>
+    </button>
 
-  <p id="lightboxCaption"></p>
+    <button
 
-</div>
+      class="lightbox-prev"
 
-<script src="gallery.js"></script>
+      id="lightboxPrev"
+
+      type="button"
+
+      aria-label="Previous image">
+
+      ←
+
+    </button>
+
+    <img
+
+      id="lightboxImage"
+
+      src=""
+
+      alt=""
+
+      decoding="async">
+
+    <button
+
+      class="lightbox-next"
+
+      id="lightboxNext"
+
+      type="button"
+
+      aria-label="Next image">
+
+      →
+
+    </button>
+
+    <p id="lightboxCaption" aria-live="polite"></p>
+
+  </div>
+
+  <!-- Gallery JavaScript -->
+
+  <script src="gallery.js" defer></script>
+
+  <!-- Main JavaScript -->
+
+  <script src="script.js" defer></script>
 
 </body>
 
