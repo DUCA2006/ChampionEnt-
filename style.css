@@ -2818,3 +2818,66 @@ h1 {
   }
 
 }
+
+
+
+/* ==========================================
+   SOCIAL ICONS (CONTACT SECTION)
+========================================== */
+
+.social-links-container {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #a0a0a0; /* Adjust to match your exact theme */
+  margin-bottom: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.25rem; /* Space between icons */
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #c6a36b; /* Your Champion Gold color */
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(198, 163, 107, 0.2);
+}
+
+/* Hover Effect - Because we are professionals */
+.social-icons a:hover {
+  background-color: #c6a36b;
+  color: #0b0b0a;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(198, 163, 107, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 640px) {
+  .social-icons {
+    gap: 1rem;
+  }
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
