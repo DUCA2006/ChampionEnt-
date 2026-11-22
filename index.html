@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- FONT AWESOME FOR SOCIAL ICONS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- HERO IMAGE PRELOAD -->
   <link rel="preload" as="image" href="images/Champion-Hero.jpg" fetchpriority="high">
@@ -58,22 +58,32 @@
       top: 15px;
     }
 
-    /* COMPACT JAY COLE STYLE HERO */
-    .dark-site .site-header {
-      background: transparent;
-      border-bottom: none;
+    /* LOCK HEADER TO TOP OF VIEWPORT */
+    .dark-site .site-header,
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(11, 11, 10, 0.92);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     }
 
+    /* COMPACT JAY COLE STYLE HERO */
     #home.jc-hero {
       position: relative;
       width: 100%;
       max-width: 100%;
-      min-height: 85vh; /* Changed from fixed height for better responsiveness */
+      min-height: 85vh;
       background-color: #050505;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      padding: 4.5rem 1.5rem 2rem;
+      padding: 5.5rem 1.5rem 2rem;
       overflow: hidden;
       margin: 0;
     }
@@ -93,7 +103,7 @@
       height: 100%;
       max-width: 820px;
       object-fit: cover;
-      object-position: center 25%; /* Adjusted so head isn't chopped */
+      object-position: center 25%;
       filter: contrast(1.06) brightness(0.92);
     }
 
@@ -162,7 +172,7 @@
     @media (max-width: 640px) {
       #home.jc-hero {
         min-height: 75vh;
-        padding: 4rem 1.1rem 1.5rem;
+        padding: 4.75rem 1.1rem 1.5rem;
       }
       .jc-hero-title {
         margin-bottom: 0.9rem;
@@ -498,20 +508,19 @@
       <div class="contact-links">
         <a href="mailto:championisreal21@gmail.com">championisreal21@gmail.com <span>↗</span></a>
         <a href="https://wa.me/2348061449869" target="_blank" rel="noopener noreferrer">WhatsApp: +234 806 144 9869 <span>↗</span></a>
-<div class="social-links-container">
-  <span class="social-label">Follow @ChampionEnt:</span>
-  <div class="social-icons">
-    <a href="https://www.tiktok.com/@championent1" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-    <a href="https://x.com/ChampionEnt1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" style="display: block;">
-        <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-      </svg>
-    </a>
-    <a href="https://www.youtube.com/@ChampionIsreal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-    <a href="https://www.facebook.com/championogif" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-  </div>
-</div>
-
+        <div class="social-links-container">
+          <span class="social-label">Follow @ChampionEnt:</span>
+          <div class="social-icons">
+            <a href="https://www.tiktok.com/@championent1" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://x.com/ChampionEnt1" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16" fill="currentColor" style="display: block;">
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@ChampionIsreal" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/championogif" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
